@@ -1,16 +1,21 @@
 import "../style/style.css";
-import logo from "../logo.svg";
-
+import blusa from "../images/products/blusa.jpeg";
+import mezcal from "../images/products/mezcal.jpg";
+import molcajete from "../images/products/molcajete.jpeg";
 function ProductCard(props) {
   return (
     <div className="container">
-      <img src={logo} alt="" />
+      <img src={props.image} alt={props.name} className="container-image" />
       <h2 className="container-name">{props.name}</h2>
       <p className="container-description">{props.description}</p>
       <p className="container-price">{props.price}</p>
-      <a href="www" className="container-button">
-        ADD TO CARD
-      </a>
+      <button
+        className="container-button"
+        style={{ backgroundColor: props.color }}
+      >
+        {" "}
+        AGREGAR AL CARRITO
+      </button>
     </div>
   );
 }
@@ -19,14 +24,102 @@ export const Product = () => {
     <>
       <div className="flex-container">
         <ProductCard
+          image={blusa}
           name="GARNIER"
           description="LoremLoremLoremLorem"
           price="$600"
+          color="blue"
         />
         <ProductCard
+          image={mezcal}
           name="GARNIER"
           description="LoremLoremLoremLorem"
           price="$600"
+          color="orange"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
+        />
+        <ProductCard
+          image={molcajete}
+          name="GARNIER"
+          description="LoremLoremLoremLorem"
+          price="$600"
+          color="cyan"
         />
       </div>
     </>

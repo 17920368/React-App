@@ -8,8 +8,17 @@
 }
 .container {
   margin-top: 30px;
+  margin-bottom: 5px;
   width: 80%;
   box-shadow: -1px -1px 10px 5px gray;
+}
+.container-image {
+  display: block;
+  width: 90%;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
 }
 .container-name,
 .container-description,
@@ -17,12 +26,15 @@
   color: black;
   text-align: center;
 }
+.container-description {
+  width: 100%;
+  text-overflow: clip;
+}
 .container-price {
   color: orange;
   font-weight: bold;
 }
 .container-button {
-  display: block;
   width: 100%;
   text-align: center;
   background-color: orange;
@@ -30,5 +42,28 @@
   font-weight: bolder;
   font-size: 20px;
   color: black;
-  text-decoration: none;
+}
+@media (min-width: 426px) {
+  .flex-container {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .container {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 30%;
+    max-width: 520px;
+    box-shadow: -1px -1px 10px 5px gray;
+  }
+  .container:hover {
+    box-shadow: -1px -1px 10px 5px rgba(20, 20, 20, 0.959);
+  }
+  .container-button {
+    height: 3em;
+    font-size: 25px;
+  }
 }
